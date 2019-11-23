@@ -126,10 +126,10 @@ int type_r_aritmetic::aritmetic_s(string op, string destiny, string first, strin
 
 int type_r_aritmetic::aritmetic_t(string op, string destiny, string first, string second, int * taux, int * saux){
 
-    int s[7];
-    int t[7];
+    int s[8];
+    int t[8];
 
-    for(int x=0; x<7; x++){
+    for(int x=0; x<8; x++){
         s[x] = *saux;
         t[x] = *taux;
         saux++;
