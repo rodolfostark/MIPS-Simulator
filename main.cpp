@@ -24,7 +24,7 @@ int main()
     /*
        A função "abre o arquivo txt em nossa variável". Isso integra o arquivo de teste em nosso código.
     */
-    code_textfile.open("C:/Users/iagop/Desktop/teste.txt");
+    code_textfile.open("./../MIPS-Simulator/teste.txt");
 
     /*
        Este if verifica se o arquivo foi aberto corretamente. Caso não tenha sido, ele informa o usuário
@@ -33,7 +33,7 @@ int main()
     if(code_textfile.is_open() == false){
         cout << "Nao foi possivel abrir o arquivo." << endl;
         cout << "Por favor, verifique o caminho dentro de code_textfile.open()" << endl;
-        cout << "Cancelando a axecuçao do simulador" << endl;
+        cout << "Cancelando a execucao do simulador" << endl;
         exit(0);
     }
 
@@ -77,7 +77,7 @@ int main()
        OPCODE, REGISTRADORES, IMMEDIATE, etc.. São guardas nas variáveis de terminação "_text".
 
        A medida que vai se dividindo as partes em strings, vai se chamando as funções da biblioteca criada
-       "binarymips" para traduzir o texto do das partes para a tradução binária. Assim, os textos do "_text" são
+       "binarymips" para traduzir o texto das partes para a tradução binária. Assim, os textos do "_text" são
        traduzidos em códigos binários do "_bin".
     */
     for(int i=0; i<all_lines.size(); i++){
