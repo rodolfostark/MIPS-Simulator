@@ -62,8 +62,8 @@ int main()
     /*
        Vetores que representam os valores decimais dos registradores do MIPS.
     */
-    int t[]={0,0,0,0,0,0,0};
-    int s[]={0,0,0,0,0,0,0};
+    int t[]={0,0,0,0,0,0,0,0};
+    int s[]={0,0,0,0,0,0,0,0};
 
     /*
        O while coloca as linhas de texto do nosso txt dentro do "all_lines".
@@ -139,11 +139,11 @@ int main()
         cout<<"Instrucao "<<i+1<<": "<<res<<endl;
     }
 
-    for (int i=0;i<7;i++){
+    for (int i=0;i<8;i++){
         cout<<"$t"<<i<<" = "<<t[i]<<endl;
     }
 
-    for (int i=0;i<7;i++){
+    for (int i=0;i<8;i++){
         cout<<"$s"<<i<<" = "<<s[i]<<endl;
     }
     return 0;
